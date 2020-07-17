@@ -1,0 +1,13 @@
+extends ../layout/index
+
+block contenidos
+        main.container.mt-5
+        h1.text-center.mb-5 #{pagina}
+        .row
+            each mascota in mascotas
+                .col-med-6.col-lg-4.mb-4
+                 .card
+                    img(src="", alt="", class="img-fluid")
+                    .card-body
+                        h2=mascota.mas_nombre
+                        p=mascota.mas_estado
